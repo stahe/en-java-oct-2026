@@ -855,9 +855,9 @@
 </ul>
 <p>Apart from JDK, the <strong>Jakarta XML Binding</strong> library (JAXB) maps Java classes to XML documents, just as Jackson does for JSON (Chapter 5); Jackson can also read and write XML using its <em>[jackson-dataformat-xml]</em> module.</p>
 <h2 id="142-web-applications">14.2. <span style="color: #2e74b5">Web Applications</span></h2>
-<p>Chapter 13 covers only web services (applications that generate data). For web applications that generate HTML pages, the Java ecosystem offers:</p>
+<p>Chapter 13 covers only web services (applications that produce data). For web applications that generate HTML pages, the Java ecosystem offers:</p>
 <ul>
-<li><strong>Spring MVC</strong> with a template engine such as <strong>Thymeleaf</strong>: server-side generated pages; the author wrote the course <a href="https://spring.io/projects"><u><span style="color: #0563c1">“Step-by-Step Introduction to the Spring Web Framework MVC”</span></u></a> (September 2026);</li>
+<li><strong>Spring MVC</strong> with a templating engine such as <strong>Thymeleaf</strong>: server-side rendered pages; the author wrote the course <a href="https://spring.io/projects"><u><span style="color: #0563c1">“Step-by-Step Introduction to the Spring Web Framework MVC”</span></u></a> (September 2026);</li>
 <li><strong>Jakarta EE</strong> (formerly Java EE), the set of specifications that includes servlets, JPA (Jakarta Persistence, Chapter 11), CDI (dependency injection) and JAX-RS (services REST), implemented by application servers such as WildFly, Payara, or Open Liberty;</li>
 <li>other lighter or more recent frameworks: <strong>Quarkus</strong>, <strong>Micronaut</strong>, <strong>Helidon</strong>, <strong>Javalin</strong>;</li>
 <li>interfaces written in JavaScript (Vue.js, Angular, React) that consume Java web services; the author wrote the course <a href="https://hibernate.org/orm/documentation/"><u><span style="color: #0563c1">“Step-by-Step Introduction to the Vue.js Framework</span></u></a>” (September 2026).</li>
@@ -873,7 +873,7 @@
 <li>Spring Boot testing tools (<em>[@SpringBootTest]</em>, <em>[MockMvc]</em>) for testing a web service without deploying it.</li>
 </ul>
 <h2 id="145-performance">14.5. <span style="color: #2e74b5">Performance</span></h2>
-<p>The Java virtual machine compiles bytecode on the fly and optimizes it during execution, resulting in excellent performance for programs that run for extended periods. Among the tools that go a step further:</p>
+<p>The Java Virtual Machine compiles bytecode on the fly and optimizes it during execution, resulting in excellent performance for programs that run for extended periods. Among the tools that go a step further:</p>
 <ul>
 <li>the <strong>JMH</strong> tool (“Java Microbenchmark Harness”) to precisely measure code performance, taking into account the virtual machine’s warm-up time;</li>
 <li><strong>JDK Flight Recorder</strong> and <strong>JDK Mission Control</strong>, which record and analyze a program’s behavior in production;</li>
@@ -881,7 +881,7 @@
 <li>the choice of garbage collector (G1 by default, ZGC for very short pauses on large memory heaps).</li>
 </ul>
 <h2 id="146-deployment">14.6. <span style="color: #2e74b5">Deployment</span></h2>
-<p>A Java program can be deployed in several ways: as a <em>[.jar]</em> archive executed by a JDK installed on the machine (<strong><em>[java -jar application.jar]</em></strong>; Spring Boot produces a standalone <em>[.jar]</em> that contains all its libraries), as a standalone application that embeds a virtual machine stripped down to only what it needs (<em>[jlink]</em> and <em>[jpackage]</em> tools from JDK), or in a Docker <strong>container</strong> (Spring Boot directly produces a container image via <strong><em>[mvn spring-boot:build-image]</em></strong>).</p>
+<p>A Java program can be deployed in several ways: as a <em>[.jar]</em> archive executed by a JDK installed on the machine (<strong><em>[java -jar application.jar]</em></strong>; Spring Boot produces a standalone <em>[.jar]</em> that contains all its libraries), as a standalone application that embeds a virtual machine stripped down to only what it needs (the <em>[jlink]</em> and <em>[jpackage]</em> tools from JDK), or in a Docker <strong>container</strong> (Spring Boot directly generates a container image via <strong><em>[mvn spring-boot:build-image]</em></strong>).</p>
 <h2 id="147-resources">14.7. <span style="color: #2e74b5">Resources</span></h2>
 <ul>
 <li>the official Java developers’ website, with its tutorials:<a href="https://github.com/FasterXML/jackson"><u><span style="color: #0563c1"> https://dev.java</span></u></a>;</li>
