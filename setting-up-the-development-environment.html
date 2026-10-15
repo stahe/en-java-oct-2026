@@ -1042,7 +1042,7 @@
 <p>These results were obtained with the JDK package from Ubuntu. With Temurin, lines 2 and 3 list <em>[Temurin-25]</em>, and the exact version depends on the installation date: patch updates are released quarterly. All JDK and 25.0.x versions are suitable for this document. Multiple JDK files can coexist on the same system: the first one found in the <em>[PATH]</em> directory responds to the <em>[java]</em> command.</p>
 <h3 id="212-commands-for-the-jdk">2.1.2. <span style="color: #1f4d78">Commands for the JDK</span></h3>
 <p>The JDK provides numerous commands. Here are the ones we will use:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Command</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Role</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[java Fichier.java]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">compiles in memory and executes a program written in a source file (Java 11; multiple files starting with Java 22)</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[javac -d classes Fichier.java]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">compiles one or more source files and places the resulting <i>[.class]</i> files in the <i>[classes]</i> folder</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[java -cp classes Classe]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">executes the <i>[main]</i> method of a compiled class, searched for in the class path (<i><b>[-cp]</b></i>)</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[java -cp &quot;lib/*&quot; Fichier.java]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">executes a source file that uses the libraries (<i>[.jar]</i> files) in the <i>[lib]</i> folder</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[jshell]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Interactive interpreter: you type Java statements and see their results immediately</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[jar]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">creates or reads a <i>[.jar]</i> archive (a ZIP file of compiled classes)</div></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Command</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Role</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[java File.java]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">compiles in memory and executes a program written in a source file (Java 11; multiple files starting with Java 22)</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[javac -d classes File.java]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">compiles one or more source files and places the resulting <i>[.class]</i> files in the <i>[classes]</i> folder</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[java -cp classes ClassName]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">executes the <i>[main]</i> method of a compiled class, searched for in the class path (<i><b>[-cp]</b></i>)</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[java -cp &quot;lib/*&quot; File.java]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">executes a source file that uses the libraries (<i>[.jar]</i> files) in the <i>[lib]</i> folder</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[jshell]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Interactive interpreter: you type Java statements and see their results immediately</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><i><b>[jar]</b></i></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">creates or reads a <i>[.jar]</i> archive (a ZIP file of compiled classes)</div></td></tr></table>
 
 <p>The <em>[jshell]</em> interpreter (Java 9) is useful for testing a method or expression without writing a program:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
@@ -1100,8 +1100,8 @@
 <p>The phases are sequential: running <em>[package]</em> also triggers <em>[compile]</em> and <em>[test]</em>. The <strong><em>[-q]</em></strong> (“quiet”) option suppresses Maven messages and displays only those from the executed program; the <strong><em>[-Dexec.args=&quot;a b&quot;]</em></strong> option passes arguments to the program launched by <strong><em>[exec:java]</em></strong>.</p>
 <h2 id="23-the-editor">2.3. <span style="color: #2e74b5">The editor</span></h2>
 <h3 id="231-intellij-idea">2.3.1. <span style="color: #1f4d78">IntelliJ IDEA</span></h3>
-<p><a href="https://www.jetbrains.com/idea/"><u><span style="color: #0563c1">IntelliJ IDEA</span></u></a>, from the company JetBrains, is the most widely used Java editor. Its basic features, which are more than sufficient for this document, are free. It supports Maven projects: select “File / Open,” then choose the folder containing the <em>[pom.xml]</em> file; IntelliJ downloads the libraries, compiles the project, and allows you to run a class by clicking the green triangle in the margin next to its method <em>[main]</em> (<em>[Ctrl-Maj-F10]</em>), or run a test by clicking the same triangle next to the test method. Specify the JDK to use in “File / Project Structure / SDK.”</p>
-<p>You can open the entire <em>[java-oct-2026]</em> examples folder at once (“File / Open”): IntelliJ detects all the Maven projects there and displays them in its “Maven” panel. One precaution is necessary at this point. The projects in Chapters 10 through 13 (versions 6 through 9 of the <em>[Impots]</em> application) use the modules <em>[impots-dao]</em>, <em>[impots-metier]</em>, and <em>[impots-ui]</em> from version 5, which was written in Chapter 6. These are not public libraries: Maven can only find them in the local repository if they have been installed there. You must therefore start by installing version 5: in the “Maven” panel, expand <em>[impots-v5]</em> / &quot;Lifecycle&quot; and double-click on <em>[install]</em> (or type <strong><em>[mvn install]</em></strong> in the <em>[06-architectures/ImpotsV5]</em> folder), then click the &quot;Sync All Maven Projects&quot; button in the panel. Chapter 6 explains what this command does and what to do if IntelliJ still reports unresolved dependencies.</p>
+<p><a href="https://www.jetbrains.com/idea/"><u><span style="color: #0563c1">IntelliJ IDEA</span></u></a>, from the company JetBrains, is the most widely used Java editor. Its basic features, which are more than sufficient for this document, are free. It supports Maven projects: select “File / Open,” then choose the folder containing the <em>[pom.xml]</em> file; IntelliJ downloads the libraries, compiles the project, and allows you to run a class by clicking the green triangle in the margin next to its method <em>[main]</em> (<em>[Ctrl-Shift-F10]</em>), or run a test by clicking the same triangle next to the test method. Specify the JDK to use in “File / Project Structure / SDK.”</p>
+<p>You can open the entire <em>[java-oct-2026]</em> examples folder at once (“File / Open”): IntelliJ detects all the Maven projects there and displays them in its “Maven” panel. One precaution is necessary at this point. The projects in Chapters 10 through 13 (versions 6 through 9 of the <em>[Tax] application</em>) use the modules <em>[tax-dao], [tax-business], and [tax-ui]</em> from version 5, which was written in Chapter 6. These are not public libraries: Maven can only find them in the local repository if they have been installed there. You must therefore start by installing version 5: in the “Maven” panel, expand <em>[tax-v5]</em> / &quot;Lifecycle&quot; and double-click on <em>[install]</em> (or type <strong><em>[mvn install]</em></strong> in the <em>[06-architectures/TaxV5]</em> folder), then click the &quot;Sync All Maven Projects&quot; button in the panel. Chapter 6 explains what this command does and what to do if IntelliJ still reports unresolved dependencies.</p>
 <h3 id="232-vs-code">2.3.2. <span style="color: #1f4d78">VS Code</span></h3>
 <p><a href="https://code.visualstudio.com/"><u><span style="color: #0563c1">VS Code</span></u></a> is a free, cross-platform editor. To program in Java, you can install Microsoft’s <strong>Extension Pack for Java</strong> (go to the “Extensions” menu and search for “Extension Pack for Java”), which includes language support, a debugger, test execution, and Maven support. This provides:</p>
 <ul>
@@ -1123,13 +1123,13 @@
 <span class="normal"><a href="#__codelineno-4-3">3</a></span>
 <span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1">// first Java program: a compact source file</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="n">IO</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"1er essai avec Java 25"</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="n">IO</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"1st try with Java 25"</span><span class="p">);</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>and run it:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>&gt; java Hello.java
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>1er essai avec Java 25
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>1st try with Java 25
 </code></pre></div></td></tr></table></div>
 <p>Comments:</p>
 <ul>
@@ -1138,41 +1138,41 @@
 <li>Line 3: the program’s only statement: it prints a line of text to the screen. The class <em>[IO]</em> (Java 25) provides simple methods for writing (<em>[print]</em>, <em>[println]</em>) and reading (<em>[readln]</em>) from the keyboard;</li>
 <li>the command <strong><em>[java Hello.java]</em></strong> compiles the program in memory—without creating a <em>[.class]</em> file—and then executes it. This ability to run a source file directly was introduced in Java 11.</li>
 </ul>
-<p>The file name must be a valid Java identifier: <em>[Hello.java]</em> or <em>[Bases01.java]</em> are acceptable, but <em>[bases-01.java]</em> is rejected by the compiler (<em>[bad file name]</em>) because the file name becomes the name of the generated class. By convention, class names—and therefore file names—begin with a capital letter.</p>
+<p>The file name must be a valid Java identifier: <em>[Hello.java]</em> or <em>[Basics01.java]</em> are acceptable, but <em>[basics-01.java]</em> is rejected by the compiler (<em>[bad file name]</em>) because the file name becomes the name of the generated class. By convention, class names—and therefore file names—begin with a capital letter.</p>
 <p>You can also compile the program with <em>[javac]</em>, which produces a file named <em>[.class]</em>, and then run this compiled file:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
 <span class="normal"><a href="#__codelineno-6-2">2</a></span>
 <span class="normal"><a href="#__codelineno-6-3">3</a></span>
 <span class="normal"><a href="#__codelineno-6-4">4</a></span>
 <span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>&gt; javac -d classes Hello.java
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>&gt; dir classes (liste des fichiers)
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>&gt; dir classes (list of files)
 <a id="__codelineno-6-3" name="__codelineno-6-3"></a>Hello.class
 <a id="__codelineno-6-4" name="__codelineno-6-4"></a>&gt; java -cp classes Hello
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a>1er essai avec Java 25
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a>1st try with Java 25
 </code></pre></div></td></tr></table></div>
 <p>The file <em>[Hello.class]</em> contains the bytecode for the <em>[Hello]</em> class generated by the compiler. The command <strong><em>[java -cp classes Hello]</em></strong> instructs the virtual machine to execute the method <em>[main]</em> of the class <em>[Hello]</em>, which is located in the <em>[classes]</em> folder.</p>
-<p>Compact source files are suitable for small programs, and we will use them for most of the examples. When a program requires an external library, it can still be launched using the <strong><em>[java -cp &quot;lib/*&quot; Programme.java]</em></strong> command if you have copied the <em>[.jar]</em> archives of the library (and those it depends on) into a <em>[lib]</em> folder. But gathering these archives by hand quickly becomes tedious, so we’ll write a Maven project.</p>
+<p>Compact source files are suitable for small programs, and we will use them for most of the examples. When a program requires an external library, it can still be launched using the <strong><em>[java -cp &quot;lib/*&quot; Program.java]</em></strong> command if you have copied the <em>[.jar]</em> archives of the library (and those it depends on) into a <em>[lib]</em> folder. But gathering these archives by hand quickly becomes tedious, so we’ll write a Maven project.</p>
 <p>On Windows, accented characters written by <em>[IO.println]</em> or <em>[System.out.println]</em> display correctly in the terminal: Java converts the text to the terminal’s encoding. The source files must be saved in UTF-8, the default encoding for VS Code and IntelliJ IDEA, and the one the compiler assumes starting with Java 18.</p>
 <h2 id="25-a-maven-project">2.5. <span style="color: #2e74b5">A Maven Project</span></h2>
 <h3 id="251-project-structure">2.5.1. <span style="color: #1f4d78">Project Structure</span></h3>
-<p>A <strong>Maven project</strong> is a folder containing a <em>[pom.xml]</em> file (“Project Object Model”) and source files organized according to a standard directory structure. The <em>[PremierProgramme]</em> project in the <em>[02-installation]</em> folder is as follows:</p>
+<p>A <strong>Maven project</strong> is a folder containing a <em>[pom.xml]</em> file (“Project Object Model”) and source files organized according to a standard directory structure. The <em>[FirstProgram]</em> project in the <em>[02-installation]</em> folder is as follows:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
 <span class="normal"><a href="#__codelineno-7-2">2</a></span>
 <span class="normal"><a href="#__codelineno-7-3">3</a></span>
 <span class="normal"><a href="#__codelineno-7-4">4</a></span>
 <span class="normal"><a href="#__codelineno-7-5">5</a></span>
 <span class="normal"><a href="#__codelineno-7-6">6</a></span>
-<span class="normal"><a href="#__codelineno-7-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>PremierProgramme/
+<span class="normal"><a href="#__codelineno-7-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>FirstProgram/
 <a id="__codelineno-7-2" name="__codelineno-7-2"></a>├── pom.xml
 <a id="__codelineno-7-3" name="__codelineno-7-3"></a>└── src/
 <a id="__codelineno-7-4" name="__codelineno-7-4"></a>    └── main/
 <a id="__codelineno-7-5" name="__codelineno-7-5"></a>        └── java/
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>            └── premier/
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>            └── first/
 <a id="__codelineno-7-7" name="__codelineno-7-7"></a>                └── Main.java
 </code></pre></div></td></tr></table></div>
 <ul>
 <li><em>[src/main/java]</em> contains the program&#x27;s source files; <em>[src/main/resources]</em> contains the data or configuration files to be placed alongside the compiled classes; <em>[src/test/java]</em> contains the tests (Chapter 6);</li>
-<li>Under <em>[src/main/java]</em>, the folder structure mirrors that of <strong>the packages</strong> (Chapter 4): the class <em>[premier.Main]</em> is located in the folder <em>[premier]</em>.</li>
+<li>Under <em>[src/main/java]</em>, the folder structure mirrors that of <strong>the packages</strong> (Chapter 4): the class <em>[first.Main]</em> is located in the folder [first].</li>
 </ul>
 <p>You can create this directory structure manually, or let IDE create it (IntelliJ: “File / New / Project,” select “Maven” as the build system). The <em>[pom.xml]</em> file is as follows:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
@@ -1222,20 +1222,20 @@
 <a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">         </span><span class="na">xsi:schemaLocation=</span><span class="s">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span><span class="nt">&gt;</span>
 <a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">    </span><span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
 <a id="__codelineno-8-6" name="__codelineno-8-6"></a>
-<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">     </span><span class="cm">&lt;!-- project details --&gt;</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>exemples.installation<span class="nt">&lt;/groupId&gt;</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>premier-programme<span class="nt">&lt;/artifactId&gt;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">    </span><span class="cm">&lt;!-- the project coordinates --&gt;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>examples.installation<span class="nt">&lt;/groupId&gt;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>first-program<span class="nt">&lt;/artifactId&gt;</span>
 <a id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="w">    </span><span class="nt">&lt;version&gt;</span>1.0<span class="nt">&lt;/version&gt;</span>
 <a id="__codelineno-8-11" name="__codelineno-8-11"></a>
 <a id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="w">    </span><span class="nt">&lt;properties&gt;</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="w">         </span><span class="cm">&lt;!-- Target Java version and source file encoding --&gt;</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="w">        </span><span class="cm">&lt;!-- target Java version and source file encoding --&gt;</span>
 <a id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="w">        </span><span class="nt">&lt;maven.compiler.release&gt;</span>25<span class="nt">&lt;/maven.compiler.release&gt;</span>
 <a id="__codelineno-8-15" name="__codelineno-8-15"></a><span class="w">        </span><span class="nt">&lt;project.build.sourceEncoding&gt;</span>UTF-8<span class="nt">&lt;/project.build.sourceEncoding&gt;</span>
 <a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="w">    </span><span class="nt">&lt;/properties&gt;</span>
 <a id="__codelineno-8-17" name="__codelineno-8-17"></a>
 <a id="__codelineno-8-18" name="__codelineno-8-18"></a><span class="w">    </span><span class="nt">&lt;build&gt;</span>
 <a id="__codelineno-8-19" name="__codelineno-8-19"></a><span class="w">        </span><span class="nt">&lt;plugins&gt;</span>
-<a id="__codelineno-8-20" name="__codelineno-8-20"></a><span class="w">             </span><span class="cm">&lt;!-- The compiler, with all warnings --&gt;</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20"></a><span class="w">            </span><span class="cm">&lt;!-- the compiler, with all warnings --&gt;</span>
 <a id="__codelineno-8-21" name="__codelineno-8-21"></a><span class="w">            </span><span class="nt">&lt;plugin&gt;</span>
 <a id="__codelineno-8-22" name="__codelineno-8-22"></a><span class="w">                </span><span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
 <a id="__codelineno-8-23" name="__codelineno-8-23"></a><span class="w">                </span><span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
@@ -1246,13 +1246,13 @@
 <a id="__codelineno-8-28" name="__codelineno-8-28"></a><span class="w">                    </span><span class="nt">&lt;/compilerArgs&gt;</span>
 <a id="__codelineno-8-29" name="__codelineno-8-29"></a><span class="w">                </span><span class="nt">&lt;/configuration&gt;</span>
 <a id="__codelineno-8-30" name="__codelineno-8-30"></a><span class="w">            </span><span class="nt">&lt;/plugin&gt;</span>
-<a id="__codelineno-8-31" name="__codelineno-8-31"></a><span class="w">             </span><span class="cm">&lt;!-- `mvn exec:java` runs the main class --&gt;</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31"></a><span class="w">            </span><span class="cm">&lt;!-- mvn exec:java runs the main class --&gt;</span>
 <a id="__codelineno-8-32" name="__codelineno-8-32"></a><span class="w">            </span><span class="nt">&lt;plugin&gt;</span>
 <a id="__codelineno-8-33" name="__codelineno-8-33"></a><span class="w">                </span><span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
 <a id="__codelineno-8-34" name="__codelineno-8-34"></a><span class="w">                </span><span class="nt">&lt;artifactId&gt;</span>exec-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
 <a id="__codelineno-8-35" name="__codelineno-8-35"></a><span class="w">                </span><span class="nt">&lt;version&gt;</span>3.5.1<span class="nt">&lt;/version&gt;</span>
 <a id="__codelineno-8-36" name="__codelineno-8-36"></a><span class="w">                </span><span class="nt">&lt;configuration&gt;</span>
-<a id="__codelineno-8-37" name="__codelineno-8-37"></a><span class="w">                    </span><span class="nt">&lt;mainClass&gt;</span>premier.Main<span class="nt">&lt;/mainClass&gt;</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37"></a><span class="w">                    </span><span class="nt">&lt;mainClass&gt;</span>first.Main<span class="nt">&lt;/mainClass&gt;</span>
 <a id="__codelineno-8-38" name="__codelineno-8-38"></a><span class="w">                </span><span class="nt">&lt;/configuration&gt;</span>
 <a id="__codelineno-8-39" name="__codelineno-8-39"></a><span class="w">            </span><span class="nt">&lt;/plugin&gt;</span>
 <a id="__codelineno-8-40" name="__codelineno-8-40"></a><span class="w">        </span><span class="nt">&lt;/plugins&gt;</span>
@@ -1290,33 +1290,33 @@
 <span class="normal"><a href="#__codelineno-10-6">6</a></span>
 <span class="normal"><a href="#__codelineno-10-7">7</a></span>
 <span class="normal"><a href="#__codelineno-10-8">8</a></span>
-<span class="normal"><a href="#__codelineno-10-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">premier</span><span class="p">;</span>
+<span class="normal"><a href="#__codelineno-10-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">first</span><span class="p">;</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2"></a>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="c1">// the project’s main program [PremierProgramme]</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="c1">// the main program of the [FirstProgram] project</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-10-5" name="__codelineno-10-5"></a>
 <a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"1er essai avec un projet Maven / Java 25"</span><span class="p">);</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"1st try with a Maven project / Java 25"</span><span class="p">);</span>
 <a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>line 1: the class belongs to the package <em>[premier]</em>; its full name is <em>[premier.Main]</em>;</li>
+<li>line 1: the class belongs to the package <em>[first]; its full name is [first.Main]</em>;</li>
 <li>lines 4–9: the class <em>[Main]</em>. A source file contains at most one public class, which bears the name of the file;</li>
 <li>lines 6–8: the method <em>[main]</em>, in the form it has had since the first version of Java. We will compare the two forms in Chapter 3.</li>
 </ul>
 <h3 id="252-compilation-and-execution">2.5.2. <span style="color: #1f4d78">Compilation and Execution</span></h3>
-<p>The command <strong><em>[mvn compile]</em></strong>, entered in the project folder, compiles the project: Maven downloads any required plugins as needed, then compiles the <em>[src/main/java]</em> files and places the resulting classes in the <em>[target/classes]</em> folder, preserving the package hierarchy (<em>[target/classes/premier/Main.class]</em>). The <strong><em>[mvn compile exec:java]</em></strong> command compiles the project and then runs it; with the <strong><em>[-q]</em></strong> option, only the program’s output is displayed:</p>
+<p>The command <strong><em>[mvn compile]</em></strong>, entered in the project folder, compiles the project: Maven downloads any required plugins as needed, then compiles the <em>[src/main/java]</em> files and places the resulting classes in the <em>[target/classes]</em> folder, preserving the package hierarchy (<em>[target/classes/first/Main.class]</em>). The <strong><em>[mvn compile exec:java]</em></strong> command compiles the project and then runs it; with the <strong><em>[-q]</em></strong> option, only the program’s output is displayed:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
 <span class="normal"><a href="#__codelineno-11-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>&gt; mvn -q compile exec:java
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a>1er essai avec un projet Maven / Java 25
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>1st try with a Maven project / Java 25
 </code></pre></div></td></tr></table></div>
 <p>Once the project is compiled, you can also run the class directly using the command <em>[java]</em>, specifying the location of the classes:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>&gt; java -cp target/classes premier.Main
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a>1er essai avec un projet Maven / Java 25
+<span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>&gt; java -cp target/classes first.Main
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>1st try with a Maven project / Java 25
 </code></pre></div></td></tr></table></div>
-<p>The <em>[target]</em> folder can be safely deleted (<strong><em>[mvn clean]</em></strong>): it will be recreated during the next compilation. The command <strong><em>[mvn package]</em></strong> also produces the archive <em>[target/premier-programme-1.0.jar]</em>, which can be executed using <strong><em>[java -cp target/premier-programme-1.0.jar premier.Main]</em></strong>: this is the format in which a Java program is delivered.</p>
+<p>The <em>[target]</em> folder can be safely deleted (<strong><em>[mvn clean]</em></strong>): it will be recreated during the next compilation. The command <strong><em>[mvn package]</em></strong> also produces the archive <em>[target/first-program-1.0.jar]</em>, which can be executed using <strong><em>[java -cp target/first-program-1.0.jar first.Main]</em></strong>: this is the format in which a Java program is delivered.</p>
 <h2 id="26-a-project-with-multiple-modules">2.6. <span style="color: #2e74b5">A project with multiple modules</span></h2>
 <h3 id="261-the-aggregator-project">2.6.1. <span style="color: #1f4d78">The aggregator project</span></h3>
 <p>A Maven project can group together several other projects, called its <strong>modules</strong>. The <em>[02-installation]</em> folder contains a file named <em>[pom.xml]</em> that groups together its two projects:</p>
@@ -1337,20 +1337,20 @@
 <span class="normal"><a href="#__codelineno-13-15">15</a></span>
 <span class="normal"><a href="#__codelineno-13-16">16</a></span>
 <span class="normal"><a href="#__codelineno-13-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="cm">&lt;!-- an “aggregator” project: it groups the projects in the folder to build them together --&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="cm">&lt;!-- an "aggregator" project: it groups the projects of the folder to build them together --&gt;</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="nt">&lt;project</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"http://maven.apache.org/POM/4.0.0"</span>
 <a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">         </span><span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span>
 <a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">         </span><span class="na">xsi:schemaLocation=</span><span class="s">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span><span class="nt">&gt;</span>
 <a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">    </span><span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
 <a id="__codelineno-13-7" name="__codelineno-13-7"></a>
-<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>exemples.installation<span class="nt">&lt;/groupId&gt;</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>examples.installation<span class="nt">&lt;/groupId&gt;</span>
 <a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>installation<span class="nt">&lt;/artifactId&gt;</span>
 <a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">    </span><span class="nt">&lt;version&gt;</span>1.0<span class="nt">&lt;/version&gt;</span>
 <a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="w">    </span><span class="nt">&lt;packaging&gt;</span>pom<span class="nt">&lt;/packaging&gt;</span>
 <a id="__codelineno-13-12" name="__codelineno-13-12"></a>
 <a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="w">    </span><span class="nt">&lt;modules&gt;</span>
-<a id="__codelineno-13-14" name="__codelineno-13-14"></a><span class="w">        </span><span class="nt">&lt;module&gt;</span>PremierProgramme<span class="nt">&lt;/module&gt;</span>
-<a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="w">        </span><span class="nt">&lt;module&gt;</span>DeuxMains<span class="nt">&lt;/module&gt;</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14"></a><span class="w">        </span><span class="nt">&lt;module&gt;</span>FirstProgram<span class="nt">&lt;/module&gt;</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="w">        </span><span class="nt">&lt;module&gt;</span>TwoHands<span class="nt">&lt;/module&gt;</span>
 <a id="__codelineno-13-16" name="__codelineno-13-16"></a><span class="w">    </span><span class="nt">&lt;/modules&gt;</span>
 <a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="nt">&lt;/project&gt;</span>
 </code></pre></div></td></tr></table></div>
@@ -1360,7 +1360,7 @@
 </ul>
 <p>In the <em>[02-installation]</em> folder, the <strong><em>[mvn compile]</em></strong> command compiles both projects; a IDE command that opens this folder sees both projects at once. In Chapter 6, we’ll see that a parent project can also pass a common configuration (library versions, compiler options) to its modules.</p>
 <h3 id="262-a-project-with-multiple-main-methods">2.6.2. <span style="color: #1f4d78">A project with multiple <code>main</code> methods</span></h3>
-<p>A project can contain multiple classes, each with a <em><code>[main]</code></em> method: each is a possible entry point, and the class to be executed is chosen at runtime. The project <code>*[DeuxMains]</code><em> contains two classes. The </em>[P1]* class:</p>
+<p>A project can contain multiple classes, each with a <em><code>[main]</code></em> method: each is a possible entry point, and the class to be executed is chosen at runtime. The project <code>[TwoHands]</code> contains two classes. The <em>[P1]</em> class:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
 <span class="normal"><a href="#__codelineno-14-2">2</a></span>
 <span class="normal"><a href="#__codelineno-14-3">3</a></span>
@@ -1368,12 +1368,12 @@
 <span class="normal"><a href="#__codelineno-14-5">5</a></span>
 <span class="normal"><a href="#__codelineno-14-6">6</a></span>
 <span class="normal"><a href="#__codelineno-14-7">7</a></span>
-<span class="normal"><a href="#__codelineno-14-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">deuxmains</span><span class="p">;</span>
+<span class="normal"><a href="#__codelineno-14-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">twohands</span><span class="p">;</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2"></a>
 <a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">P1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-14-4" name="__codelineno-14-4"></a>
 <a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"main de la classe P1"</span><span class="p">);</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"main of the class P1"</span><span class="p">);</span>
 <a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -1381,10 +1381,10 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
 <span class="normal"><a href="#__codelineno-15-2">2</a></span>
 <span class="normal"><a href="#__codelineno-15-3">3</a></span>
-<span class="normal"><a href="#__codelineno-15-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>&gt; java -cp target/classes deuxmains.P1
-<a id="__codelineno-15-2" name="__codelineno-15-2"></a>main de la classe P1
-<a id="__codelineno-15-3" name="__codelineno-15-3"></a>&gt; java -cp target/classes deuxmains.P2
-<a id="__codelineno-15-4" name="__codelineno-15-4"></a>main de la classe P2
+<span class="normal"><a href="#__codelineno-15-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>&gt; java -cp target/classes twohands.P1
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a>main of the class P1
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a>&gt; java -cp target/classes twohands.P2
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a>main of the class P2
 </code></pre></div></td></tr></table></div>
 <p>For the command <strong><em>[mvn exec:java]</em></strong>, the project file <em>[pom.xml]</em> specifies the class to be executed:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
@@ -1395,31 +1395,31 @@
 <span class="normal"><a href="#__codelineno-16-6">6</a></span>
 <span class="normal"><a href="#__codelineno-16-7">7</a></span>
 <span class="normal"><a href="#__codelineno-16-8">8</a></span>
-<span class="normal"><a href="#__codelineno-16-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="w">             </span><span class="cm">&lt;!-- the class whose `main` method is executed by `mvn exec:java` --&gt;</span>
+<span class="normal"><a href="#__codelineno-16-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="w">            </span><span class="cm">&lt;!-- the class whose main method is run by mvn exec:java --&gt;</span>
 <a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="w">            </span><span class="nt">&lt;plugin&gt;</span>
 <a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="w">                </span><span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
 <a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="w">                </span><span class="nt">&lt;artifactId&gt;</span>exec-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
 <a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="w">                </span><span class="nt">&lt;version&gt;</span>3.5.1<span class="nt">&lt;/version&gt;</span>
 <a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="w">                </span><span class="nt">&lt;configuration&gt;</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">                    </span><span class="nt">&lt;mainClass&gt;</span>deuxmains.P2<span class="nt">&lt;/mainClass&gt;</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">                    </span><span class="nt">&lt;mainClass&gt;</span>twohands.P2<span class="nt">&lt;/mainClass&gt;</span>
 <a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="w">                </span><span class="nt">&lt;/configuration&gt;</span>
 <a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="w">            </span><span class="nt">&lt;/plugin&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>Line 7: The method <em>[main]</em> that is executed belongs to the class <em>[deuxmains.P2]</em> (the full class name, including the package).</li>
+<li>Line 7: The method <em>[main]</em> that is executed belongs to the class <em>[twohands.P2]</em> (the full class name, including the package).</li>
 </ul>
 <p>Results:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
 <span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>&gt; mvn -q compile exec:java
-<a id="__codelineno-17-2" name="__codelineno-17-2"></a>main de la classe P2
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>main of the class P2
 </code></pre></div></td></tr></table></div>
-<p>You can choose a different class without modifying the <em>[pom.xml]</em> file: <strong><em>[mvn -q exec:java -Dexec.mainClass=deuxmains.P1]</em></strong>.</p>
+<p>You can choose a different class without modifying the <em>[pom.xml]</em> file: <strong><em>[mvn -q exec:java -Dexec.mainClass=twohands.P1]</em></strong>.</p>
 <h2 id="27-examples-in-the-document">2.7. <span style="color: #2e74b5">Examples in the document</span></h2>
 <p>To run the examples in this document:</p>
 <ul>
 <li>download the <em>[java-oct-2026]</em> folder (link at the beginning of the document);</li>
 <li>open it in VS Code (“File / Open Folder”), or, for a given Maven project, open its folder in IntelliJ IDEA;</li>
-<li>in a terminal located in a chapter’s folder, run a compact source file using <strong><em>[java Nom.java]</em></strong>, or a Maven project using <strong><em>[mvn -q compile exec:java]</em></strong> in the project folder (the text of each chapter provides the exact command).</li>
+<li>in a terminal located in a chapter’s folder, run a compact source file using <strong><em>[java Name.java]</em></strong>, or a Maven project using <strong><em>[mvn -q compile exec:java]</em></strong> in the project folder (the text of each chapter provides the exact command).</li>
 </ul>
 <p>Chapters 10 and 11 use a database named MySQL; the installation of MySQL along with <em>[Laragon]</em> is described in the appendix.</p>
 
